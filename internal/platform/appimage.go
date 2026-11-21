@@ -3,6 +3,7 @@ package platform
 import (
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
@@ -21,10 +22,10 @@ import (
 // So every entry under $APPDIR is taken out of the environment (a variable
 // left empty is removed) and the working directory moves out of the mount.
 // $APPDIR, $APPIMAGE, $ARGV0 and $OWD themselves stay: they only describe the
-// AppImage. Outside an AppImage it does nothing.
+// AppImage. Outside an AppImage (and off Linux) it does nothing.
 func LeaveAppImage() {
 	dir := os.Getenv("APPDIR")
-	if dir == "" {
+	if dir == "" || runtime.GOOS != "linux" {
 		return
 	}
 	for _, kv := range os.Environ() {

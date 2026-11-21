@@ -2,10 +2,14 @@ package platform
 
 import (
 	"os"
+	"runtime"
 	"testing"
 )
 
 func TestLeaveAppImage(t *testing.T) {
+	if runtime.GOOS != "linux" {
+		t.Skip("AppImages only exist on Linux")
+	}
 	dir := t.TempDir() + "/.mount_envsetX"
 	if err := os.MkdirAll(dir+"/usr", 0o755); err != nil {
 		t.Fatal(err)
