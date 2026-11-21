@@ -9,10 +9,14 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/EriikGabriel/dev-environment-files/internal/platform"
 	"github.com/spf13/cobra"
 )
 
 func main() {
+	// Inside the AppImage, the programs this starts (pacman, yay, git, curl,
+	// fish...) must not see its libraries nor run from its mount.
+	platform.LeaveAppImage()
 	if err := newRoot().Execute(); err != nil {
 		os.Exit(1)
 	}

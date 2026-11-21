@@ -66,6 +66,26 @@ apps:
   build-tools:
     description: Compiler toolchain (gcc, make, ...)
     names: { debian: build-essential, arch: base-devel }
+  # The aur items (IntelliJ, Bruno, Beekeeper, Spotify, Vicinae...) need an AUR
+  # helper. CachyOS has yay in its own repository; on plain Arch it is built
+  # from the AUR (yay-bin), which needs git and base-devel first.
+  yay:
+    description: yay, the AUR helper the AUR apps are installed with (from the CachyOS repository; on Arch, built from the AUR)
+    method: { arch: script }
+    check:
+      arch: command -v yay >/dev/null 2>&1 || command -v paru >/dev/null 2>&1
+    source:
+      arch: |
+        set -e
+        if pacman -Si yay >/dev/null 2>&1; then
+          $SUDO pacman -S --needed --noconfirm yay
+        else
+          $SUDO pacman -S --needed --noconfirm git base-devel
+          tmp="$(mktemp -d)"
+          trap 'rm -rf "$tmp"' EXIT
+          git clone --depth=1 https://aur.archlinux.org/yay-bin.git "$tmp/yay-bin"
+          (cd "$tmp/yay-bin" && makepkg -si --noconfirm)
+        fi
 
   # ---- runtimes and services ----
   docker:
@@ -242,8 +262,16 @@ apps:
     method: { "*": script }
     check:
       "*": test -x "$HOME/.local/bin/zed"
+    # downloaded first: piped straight into sh, a failed download ran an
+    # empty script and the item passed without installing anything
     source:
-      "*": curl -fsSL https://zed.dev/install.sh | sh
+      "*": |
+        set -e
+        tmp="$(mktemp)"
+        trap 'rm -f "$tmp"' EXIT
+        curl -fsSL https://zed.dev/install.sh -o "$tmp"
+        sh "$tmp"
+        test -x "$HOME/.local/bin/zed"
 
   # ---- more cli tools ----
   ripgrep: { names: { "*": ripgrep } }
