@@ -28,8 +28,8 @@ desktop:
 steps:
   - id: base
     title: Essenciais
-    description: Ferramentas básicas de linha de comando e de compilação.
-    apps: [curl, wget, git, vim, neovim, unzip, build-tools, ripgrep, btop, tree, webkit2gtk]
+    description: Ferramentas básicas de linha de comando e de compilação, e o yay, que instala os apps do AUR das outras etapas.
+    apps: [curl, wget, git, vim, neovim, unzip, build-tools, yay, ripgrep, btop, tree, webkit2gtk]
     optional: [htop, tmux, micro, helix]
 
   - id: shell

@@ -60,7 +60,7 @@ chave. A busca vai do ID exato (`ubuntu`, `cachyos`) para a família (`debian`, 
 | Método | Onde | `names` é |
 |---|---|---|
 | `native` | apt, pacman, winget | o pacote (ou o ID do winget) |
-| `aur` | Arch | o pacote do AUR (via yay ou paru) |
+| `aur` | Arch | o pacote do AUR (via yay ou paru; o item `yay`, na etapa Essenciais do perfil do CachyOS, instala o yay antes) |
 | `deb-url` | Debian/Ubuntu | o nome do pacote; `source` é a URL do `.deb` |
 | `flatpak` | Linux | o ID do Flathub |
 | `script` | todos | não usa; `source` é o script e `check` sai com 0 quando já está instalado |

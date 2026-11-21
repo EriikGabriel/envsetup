@@ -105,7 +105,7 @@ func (AUR) helper(r Runner) (string, error) {
 			return h, nil
 		}
 	}
-	return "", fmt.Errorf("no AUR helper found (install yay or paru first)")
+	return "", fmt.Errorf("no AUR helper found: select the yay item (step Essenciais) or install yay or paru first")
 }
 
 func (AUR) Refresh(context.Context, Runner, io.Writer) error { return nil }
