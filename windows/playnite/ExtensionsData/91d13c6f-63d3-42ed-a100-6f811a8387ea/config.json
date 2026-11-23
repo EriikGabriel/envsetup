@@ -1,9 +1,9 @@
 {
   "CloseRiotClient": true,
-  "RiotClientPath": "Not Installed",
+  "RiotClientPath": "C:\\Riot Games\\Riot Client",
   "LeaguePath": "Not Installed",
   "LeaguePBE": false,
-  "ValorantPath": "Not Installed",
+  "ValorantPath": "C:\\Riot Games\\VALORANT\\live",
   "LORPath": "Not Installed",
   "TwoXKOPath": "Not Installed",
   "LeagueCompanions": [],

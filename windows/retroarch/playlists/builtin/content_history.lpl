@@ -9,6 +9,30 @@
   "sort_mode": 2,
   "items": [
     {
+      "path": "D:\\Games\\Retro\\SNES\\Super Mario World (USA).smc",
+      "label": "",
+      "core_path": "C:\\Emuladores\\RetroArch\\cores\\snes9x_libretro.dll",
+      "core_name": "Nintendo - SNES / SFC (Snes9x)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "D:\\Games\\Retro\\SNES\\Super Mario World (PT-BR).smc",
+      "label": "",
+      "core_path": "C:\\Emuladores\\RetroArch\\cores\\snes9x_libretro.dll",
+      "core_name": "Nintendo - SNES / SFC (Snes9x)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "D:\\Games\\Retro\\SNES\\Super Mario World (USA).smc",
+      "label": "Super Mario World (USA)",
+      "core_path": "C:\\Emuladores\\RetroArch\\cores\\bsnes_mercury_balanced_libretro.dll",
+      "core_name": "Nintendo - SNES / SFC (bsnes-mercury Balanced)",
+      "crc32": "00000000|crc",
+      "db_name": "Nintendo - Super Nintendo Entertainment System.lpl"
+    },
+    {
       "path": "D:\\Games\\Retro\\Playstation\\Harry Potter and the Sorcerer's Stone (USA)\\Harry Potter and the Sorcerer's Stone (USA) (En,Fr,Es).cue",
       "label": "Harry Potter and the Sorcerer's Stone (USA) (En,Fr,Es)",
       "core_path": "C:\\Emuladores\\RetroArch\\cores\\mednafen_psx_hw_libretro.dll",
@@ -58,14 +82,6 @@
     },
     {
       "path": "D:\\Games\\Retro\\SNES\\Legend of Zelda, The - A Link to the Past (USA).sfc",
-      "label": "",
-      "core_path": "C:\\Emuladores\\RetroArch\\cores\\snes9x_libretro.dll",
-      "core_name": "Nintendo - SNES / SFC (Snes9x)",
-      "crc32": "",
-      "db_name": ""
-    },
-    {
-      "path": "D:\\Games\\Retro\\SNES\\Super Mario World (PT-BR).smc",
       "label": "",
       "core_path": "C:\\Emuladores\\RetroArch\\cores\\snes9x_libretro.dll",
       "core_name": "Nintendo - SNES / SFC (Snes9x)",

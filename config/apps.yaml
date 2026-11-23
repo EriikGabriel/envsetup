@@ -687,6 +687,16 @@ apps:
   hydra-launcher:
     description: 'Hydra Launcher (open-source game launcher with its own download manager; github.com/hydralauncher/hydra). Set its download folder to D:\Games\Hydra'
     names: { windows: HydraLauncher.Hydra }
+  # Hydra keeps its settings in a LevelDB next to the login and the library, so
+  # only the theme, the language and the preferences are saved (with Node; the
+  # RetroAchievements key goes to the store). Refresh with windows\hydra-settings.ps1 -Save.
+  hydra-settings:
+    description: 'The Hydra settings of windows/hydra/settings.json: the theme (Apex Pearl), the language, the download folder D:\Games\Hydra and the achievement options. Closes Hydra to write them; needs Node.js (refresh with windows\hydra-settings.ps1 -Save)'
+    method: { windows: script }
+    check:
+      windows: '& "$env:ENVSETUP_ROOT\windows\hydra-settings.ps1" -Check; exit $LASTEXITCODE'
+    source:
+      windows: '& "$env:ENVSETUP_ROOT\windows\hydra-settings.ps1" -Install'
   opera-gx: { description: Opera GX browser, names: { windows: Opera.OperaGX } }
   brave: { description: Brave browser, names: { windows: Brave.Brave } }
   proton-vpn: { description: Proton VPN (free VPN by Proton AG), names: { windows: Proton.ProtonVPN } }

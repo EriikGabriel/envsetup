@@ -98,6 +98,10 @@
         "Type": "Boolean",
         "Value": "True"
       },
+      "TO_IconsAchievements": {
+        "Type": "Boolean",
+        "Value": "True"
+      },
       "TO_CustomAvatarPath": {
         "Type": "String",
         "Value": "C:/solaris/avatar.png"
@@ -627,10 +631,6 @@
         "Value": "True"
       },
       "TO_TotalAchievement": {
-        "Type": "Boolean",
-        "Value": "False"
-      },
-      "TO_IconsAchievements": {
         "Type": "Boolean",
         "Value": "False"
       },

@@ -36,11 +36,13 @@ start_menu: true
 version: 1.22.2
 cores:
   - bsnes_mercury_balanced
+  - fceumm
   - gambatte
   - genesis_plus_gx
   - mednafen_psx_hw
   - mesen
   - mgba
+  - mupen64plus_next
   - snes9x
 bundles:
   - assets

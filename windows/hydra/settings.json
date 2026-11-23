@@ -1,0 +1,36 @@
+{
+  "language": "pt-BR",
+  "activeTheme": "Apex Pearl",
+  "themes": [
+    {
+      "id": "be6ead6c-d151-4eba-9d93-8840cdd2339d",
+      "name": "Apex Pearl",
+      "isActive": true,
+      "author": "DjvMJ2Z5",
+      "authorName": "Luiz",
+      "code": "https://hydrathemes.shop/themes/apex pearl/theme.css",
+      "createdAt": "2026-11-22T01:47:35.678Z",
+      "updatedAt": "2026-11-22T01:54:13.255Z"
+    }
+  ],
+  "userPreferences": {
+    "language": "pt-BR",
+    "downloadsPath": "D:\\Games\\Hydra",
+    "downloadDirectories": [
+      {
+        "path": "D:\\Games\\Hydra",
+        "createdAt": "2026-11-22T01:11:23.587Z",
+        "source": "auto"
+      }
+    ],
+    "optionalDownloadsPaths": [
+      "D:\\Games\\Hydra"
+    ],
+    "deleteArchiveFilesAfterExtractionByDefault": true,
+    "achievementCustomNotificationsEnabled": true,
+    "achievementCustomNotificationPosition": "bottom-right",
+    "enableSteamAchievements": true,
+    "classicsUseHeroLayout": true,
+    "retroAchievementsUsername": "Erikoow"
+  }
+}

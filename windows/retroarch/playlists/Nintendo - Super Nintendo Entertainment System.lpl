@@ -74,8 +74,8 @@
     {
       "path": "D:\\Games\\Retro\\SNES\\Super Mario World (USA).smc",
       "label": "Super Mario World (USA)",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "C:\\Emuladores\\RetroArch\\cores\\bsnes_mercury_balanced_libretro.dll",
+      "core_name": "Nintendo - SNES / SFC (bsnes-mercury Balanced)",
       "crc32": "00000000|crc",
       "db_name": "Nintendo - Super Nintendo Entertainment System.lpl"
     }

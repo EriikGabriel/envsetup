@@ -3,13 +3,18 @@
 # Playnite add-on database (api.playnite.link), at this version when it is
 # still offered. builtin ones come with Playnite.
 
-playnite: "10.64"
+playnite: "10.65"
 addons:
   - id: AnikiHelper_96a983a3-3f13-4dce-a474-4052b718bb52
     name: Aniki Helper
     version: 1.7.0
     kind: extension
     folder: Extensions/AnikiHelper_96a983a3-3f13-4dce-a474-4052b718bb52
+  - id: AutoImport_92c96e54-069b-4fc4-bbaa-35ac3064f85a
+    name: AutoImport
+    version: 1.2.0
+    kind: extension
+    folder: Extensions/AutoImport-v1.1.0
   - id: Autogrid_7F3E9B82
     name: Autogrid
     version: 1.2.0
@@ -95,7 +100,7 @@ addons:
     folder: Extensions/Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb
   - id: PlayniteAchievements
     name: Playnite Achievements
-    version: 4.3.0
+    version: 4.3.2
     kind: extension
     folder: Extensions/PlayniteAchievements
   - id: Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1
@@ -136,7 +141,7 @@ addons:
     folder: Extensions/ThemeOptions_904cbf3b-573f-48f8-9642-0a09d05c64ef
   - id: UniPlaySong.a1b2c3d4-e5f6-7890-abcd-ef1234567890
     name: UniPlaySong
-    version: 1.9.4
+    version: 1.9.5
     kind: extension
     folder: Extensions/UniPlaySong.a1b2c3d4-e5f6-7890-abcd-ef1234567890
   - id: UniversalPSNMetadata
@@ -144,6 +149,11 @@ addons:
     version: "1.1"
     kind: extension
     folder: Extensions/UniversalPSNMetadata
+  - id: Universal_Steam_Metadata
+    name: Universal Steam Metadata
+    version: "2.25"
+    kind: extension
+    folder: Extensions/Universal_Steam_Metadata
   - id: XboxLibrary_Builtin
     name: Xbox library integration
     version: "2.17"

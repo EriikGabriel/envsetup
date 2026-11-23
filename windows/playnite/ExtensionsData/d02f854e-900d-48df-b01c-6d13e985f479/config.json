@@ -8,7 +8,7 @@
   "AutoUpdateTagsToGenres": true,
   "ListGenreEquivalences": [
     {
-      "Id": "0cd642d6-6007-4c83-a947-73365a3bbc7c",
+      "Id": "c35a01a0-4b33-4fe3-ae67-982b612c4aa4",
       "Name": "RTS",
       "OldNames": [
         "Real Time Strategy (RTS)"
@@ -18,7 +18,7 @@
   ],
   "ListFeatureEquivalences": [
     {
-      "Id": "b2d6aed6-8b17-4dce-ac9a-209884f0a9cf",
+      "Id": "4462cdfc-5f8f-4d1c-9520-5201492499aa",
       "Name": "Co-Op",
       "OldNames": [
         "Co-Operative"
@@ -28,7 +28,7 @@
   ],
   "ListTagsEquivalences": [
     {
-      "Id": "d1957527-0357-45d8-b382-5882bc2086d8",
+      "Id": "cf674b9b-000c-498e-accb-2b6849fb7a97",
       "Name": "Sem música",
       "OldNames": [
         "[UPS] No Music"
@@ -36,7 +36,7 @@
       "IconUnicode": ""
     },
     {
-      "Id": "c03df0ce-1a94-4caf-bbad-1360f1a0d53d",
+      "Id": "98b08885-64cd-469d-b622-7408992bf7c4",
       "Name": "Vídeo faltando",
       "OldNames": [
         "[EMT] Video missing"
@@ -44,7 +44,7 @@
       "IconUnicode": ""
     },
     {
-      "Id": "95efd8d6-92f1-43fd-84c4-c4df2d0f0d8a",
+      "Id": "ebb95c33-abf7-4199-9eed-9065ea3d0949",
       "Name": "Com música",
       "OldNames": [
         "[UPS] Has Music"
@@ -62,7 +62,7 @@
       "IconUnicode": ""
     },
     {
-      "Id": "8852fbc5-0c32-4dd3-960e-66a63fe2b4e7",
+      "Id": "67ac2450-3fd9-47ca-b136-86aed970d291",
       "Name": "Ubisoft",
       "OldNames": [
         "Ubisoft Entertainment",
@@ -91,7 +91,7 @@
       "IconUnicode": ""
     },
     {
-      "Id": "0aaacd94-6ac4-414c-b8e2-453c041bfe43",
+      "Id": "b088411c-4981-4d7e-a969-0def9ab10a1d",
       "Name": "Bandai Namco",
       "OldNames": [
         "Bandai Namco Entertainment",
@@ -136,7 +136,7 @@
       "IconUnicode": ""
     },
     {
-      "Id": "85d46e73-5b6c-4723-995c-929bb1f9ff23",
+      "Id": "92a6ad7a-ced3-4c9e-9adc-c42cd9b3fcdb",
       "Name": "PlayStation Studios",
       "OldNames": [
         "Sony Computer Entertainment",
@@ -499,10 +499,6 @@
     {
       "Name": "Single Player",
       "IconDefault": "ico_singlePlayer.png",
-      "Feature": {
-        "Id": "c7b1fee4-aaf3-42b5-b65d-b53e94ff2961",
-        "Name": "Single Player"
-      },
       "NameAssociated": "Single Player",
       "IconCustom": "",
       "IsDark": false,
@@ -712,7 +708,7 @@
   "ShowMissingAge": true,
   "MenuInExtensions": true,
   "EnableTag": false,
-  "LastAutoLibUpdateAssetsDownload": "2026-11-19T04:05:01.5099333-03:00",
+  "LastAutoLibUpdateAssetsDownload": "2026-11-23T15:02:16.3377143-03:00",
   "AutoImport": true,
   "AutoImportOnInstalled": false
 }
